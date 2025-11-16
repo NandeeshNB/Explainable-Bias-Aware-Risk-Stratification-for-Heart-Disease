@@ -1,98 +1,44 @@
-Explainable and Bias-Aware Risk Stratification for Heart Disease Using Calibrated Machine Learning Models
-
-This project presents a fully explainable, fair, and calibrated machine learning framework for heart disease prediction. It integrates SMOTE, isotonic calibration, SHAP & LIME explainability, and Fairlearn bias analysis, ensuring performance, transparency, and ethical AI deployment in healthcare.
-
-🔍 Overview
-
-Cardiovascular diseases remain one of the leading causes of death worldwide. Traditional clinical models often struggle with non-linear data patterns, lack interpretability, and may show bias across demographic groups.
-
-This project addresses these challenges by developing a trustworthy AI framework for heart disease prediction with:
-
-✅ High accuracy
-
-✅ Explainable predictions
-
-✅ Fairness across demographic groups
-
-✅ Well-calibrated probability scores
-
-✅ Class-imbalance handling
-
-The framework is tested on two benchmark datasets: Cleveland and Statlog Heart Disease datasets.
-
-🚀 Features
-🔹 1. Data Preprocessing
-
-Missing value imputation
-
-One-hot encoding for categorical features
-
-Z-score standardization
-
-Stratified train-test split (80:20)
-
-🔹 2. Imbalance Handling
-
-Synthetic Minority Oversampling Technique (SMOTE)
-
-🔹 3. Models Used
-
-Logistic Regression
-
-Random Forest (Best Performing)
-
-Decision Tree
-
-Hyperparameter tuning using GridSearchCV
-
-🔹 4. Calibration
-
-Isotonic Regression
-
-Reduces probability miscalibration
-
-Improves clinical reliability of predictions
-
-🔹 5. Explainability (XAI)
-
-SHAP: Global + Local explanations
-
-LIME: Instance-level interpretability
-
-Surrogate Decision Tree for model transparency
-
-🔹 6. Bias Mitigation
-
-Using Fairlearn to evaluate:
-
-Demographic Parity Difference
-
-Equal Opportunity Difference
-
-Disparate Impact Ratio
-
-All fairness metrics meet ethical thresholds.
-
-📊 Results
-⭐ Best Model: Random Forest
+________________________________________
+Explainable & Bias-Aware Heart Disease Risk Stratification
+A machine learning framework for heart disease prediction that is accurate, explainable, fair, and calibrated, built using Random Forest, SHAP, LIME, SMOTE, and Fairlearn.
+________________________________________
+🚀 Overview
+This project develops a trustworthy AI system for predicting heart disease using the Cleveland and Statlog datasets. It focuses on:
+•	Explainability (SHAP, LIME)
+•	Bias mitigation (Fairlearn)
+•	Probability calibration (Isotonic Regression)
+•	Class imbalance handling (SMOTE)
+•	Transparent and clinically reliable predictions
+________________________________________
+🔧 Key Features
+•	Preprocessing: Missing value handling, one-hot encoding, z-score scaling
+•	Models: Logistic Regression, Random Forest (best performer), Decision Tree
+•	Imbalance Handling: SMOTE
+•	Calibration: Isotonic regression
+•	Explainability: SHAP, LIME, surrogate decision tree
+•	Fairness: Evaluation across gender & age groups (DPD, EOD, DIR)
+________________________________________
+📊 Results (Best Model: Random Forest)
 Metric	Score
 Accuracy	0.90
 Recall	0.92
-F1 Score	0.90
 AUC	0.95
-ECE (After Calibration)	0.041
-🔹 Key Findings
+F1 Score	0.90
+ECE (Calibrated)	0.041
+Key Insights
+•	SMOTE reduced false negatives by 15%
+•	Important features: cp, thalach, oldpeak
+•	Fairness metrics within ethical limits
+________________________________________
+🧠 Tech Stack
+Python · Scikit-learn · SHAP · LIME · Fairlearn · Imbalanced-learn
+________________________________________
+🏁 Conclusion
+A fair, interpretable, and calibrated framework for reliable heart disease risk prediction, suitable for real-world clinical decision support.
+________________________________________
 
-SMOTE increased recall by 15% (reducing false negatives).
 
-Important features (via SHAP):
 
-Chest pain type (cp)
 
-Max heart rate (thalach)
-
-ST depression (oldpeak)
-
-Surrogate tree achieved 87% fidelity to the Random Forest model.
-
-Bias metrics across age and gender were within safe limits.
+•	Surrogate tree fidelity: 87%
+________________________________________
