@@ -1,17 +1,21 @@
 # Explainable & Bias-Aware Heart Disease Risk Stratification
 
-A machine learning framework for heart disease prediction that is **accurate, explainable, fair, and calibrated**, built using Random Forest, SHAP, LIME, SMOTE, and Fairlearn.
+This project presents a fully explainable, fair, and calibrated machine learning framework for heart disease prediction. It integrates SMOTE, isotonic calibration, SHAP & LIME explainability, and Fairlearn bias analysis, ensuring performance, transparency, and ethical AI deployment in healthcare.
 
 ---
 
 ## 🚀 Overview
-This project develops a trustworthy AI system for predicting heart disease using the **Cleveland** and **Statlog** datasets. It focuses on:
+Cardiovascular diseases remain one of the leading causes of death worldwide. Traditional clinical models often struggle with non-linear data patterns, lack interpretability, and may show bias across demographic groups.
+
+This project addresses these challenges by developing a trustworthy AI framework for heart disease prediction with:
 
 - Explainability (SHAP, LIME)
 - Bias mitigation (Fairlearn)
 - Probability calibration (Isotonic Regression)
 - Class imbalance handling (SMOTE)
 - Transparent and clinically reliable predictions
+
+The framework is tested on two benchmark datasets: Cleveland and Statlog Heart Disease datasets.
 
 ---
 
@@ -49,4 +53,14 @@ Python · Scikit-learn · SHAP · LIME · Fairlearn · Imbalanced-learn
 ---
 
 ## 🏁 Conclusion
-A **fair, interpretable, and calibrated** framework for reliable heart disease risk prediction, suitable for real-world clinical decision support.
+This project successfully demonstrates a trustworthy AI-driven heart disease prediction system by balancing:
+
+✔️ Accuracy
+
+✔️ Fairness
+
+✔️ Interpretability
+
+✔️ Calibration
+
+It addresses the major limitations of current black-box healthcare models and supports real-world clinical decision-making.
